@@ -1,6 +1,6 @@
 # DSA4212
 
-# Objective
+## Objective
 Build an algorithm that can automatically tell whether an image corresponds to a young person or not.
 * You are only allowed to use a logistic regression model (possibly with regularization).
 * You can only use the first 15,000 images to train you model. The accuracy of your model will be evaluated on the last 5,000 images.
@@ -24,7 +24,7 @@ It can be a good idea to quickly explore different approaches on a subset of the
 D = 40 (predictors)
 Initialise each beta as N(0, 1/sqrt(40))
 
-# Workflow
+## Workflow
 1. Split into training [0:14999], test[15000:20001] data 
   - Work with a temporary dataset of 3000 picked randomly from final_training, no need to select balanced for now \\
   - Consider a balanced subset of the dataset if classifier turns out to be useless
@@ -42,7 +42,7 @@ Initialise each beta as N(0, 1/sqrt(40))
 
 5. Write report
 
-## Optimisation algorithms we have covered
+### Optimisation algorithms we have covered
 * Gradient descent
 * Stochastic GD (For large n)
 * SGD + momentum
@@ -50,7 +50,7 @@ Initialise each beta as N(0, 1/sqrt(40))
 * BFGS (For large p)
 * S subG D
 
-## Things to consider
+### Things to consider
 * Coloured or gray scaled images
 * Image scale
 * Contrast of images
